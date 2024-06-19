@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import time
 
 # MongoDB connection setup
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient() # add your database here, ecommerce and prodcuts should be renamed to your relevant fields
 db = client['ecommerce']
 collection = db['products']
 
